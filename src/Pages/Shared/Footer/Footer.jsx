@@ -7,7 +7,7 @@ import icon3 from "../../../assets/icons/linkedin.png";
 import icon4 from "../../../assets/icons/twitter.png";
 const Footer = () => {
     return (
-<footer>
+<footer className='mt-14'>
 <div className="footer p-10 bg-primary bg-opacity-10 text-base-content">
   <div>
   <Link to="/">
