@@ -9,7 +9,7 @@ export default {
       {
         light: {
 
-          "primary": "#98FF98",
+          "primary": "#808000",
 
           "secondary": "#FFF44F",
 

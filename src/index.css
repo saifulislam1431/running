@@ -13,3 +13,19 @@ body{
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active{
+    @apply bg-transparent text-base font-semibold text-primary
+}
+
+.default{
+    @apply bg-transparent text-base font-medium text-info text-opacity-70 hover:bg-transparent hover:text-primary
+}
+
+.myBtn{
+    @apply py-1 px-3 border border-primary font-semibold text-primary rounded hover:bg-primary hover:text-base-100 inline-flex items-center gap-1 justify-center
+}
+
+.inputField{
+    @apply px-3 lg:w-72 py-2 rounded-md placeholder:text-sm placeholder:font-semibold bg-primary bg-opacity-10 placeholder:text-info  focus:outline-primary
+}
