@@ -56,7 +56,7 @@ subNav ? <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shad
 </div> : ""
 }
 
-    <label className="swap swap-rotate ml-2 shadow-md lg:px-4 py-2 lg:py-0 rounded-2xl">
+    <label className="swap swap-rotate ml-2 shadow-md lg:px-4 py-2 lg:py-0 rounded-lg">
   
   {/* this hidden checkbox controls the state */}
   <input type="checkbox" checked={theme === "night" ? true : false} onChange={handleTheme}/>
