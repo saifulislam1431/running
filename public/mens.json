@@ -1,0 +1,193 @@
+[
+    {
+      "Category": "Men",
+      "Name": "Nike Air Max 90",
+      "Price": 169.99,
+      "AvailableQuantity": 25,
+      "Brand": "Nike",
+      "Shipping": "Free",
+      "Variant": "Black/White, Size 9",
+      "ImageURL": "https://i.ibb.co/fvBhBvJ/men-shoes.jpg"
+    },
+    {
+      "Category": "Men",
+      "Name": "Adidas Ultra Boost",
+      "Price": 179.99,
+      "AvailableQuantity": 15,
+      "Brand": "Adidas",
+      "Shipping": "Free",
+      "Variant": "Gray/Blue, Size 10",
+      "ImageURL": "https://i.ibb.co/nB0HPcG/shoe1.png"
+    },
+    {
+      "Category": "Men",
+      "Name": "Timberland 6-Inch Premium Waterproof Boots",
+      "Price": 199.99,
+      "AvailableQuantity": 10,
+      "Brand": "Timberland",
+      "Shipping": 5.99,
+      "Variant": "Wheat Nubuck, Size 11",
+      "ImageURL": "https://i.ibb.co/DMQtL3c/shoe2.png"
+    },
+    {
+      "Category": "Men",
+      "Name": "Converse Chuck Taylor All Star",
+      "Price": 89.99,
+      "AvailableQuantity": 12,
+      "Brand": "Converse",
+      "Shipping": "Free",
+      "Variant": "White, Size 9",
+      "ImageURL": "https://i.ibb.co/NVPxrr7/shoe13.png"
+    },
+    {
+      "Category": "Men",
+      "Name": "Gucci Horsebit Leather Loafer",
+      "Price": 599.99,
+      "AvailableQuantity": 18,
+      "Brand": "Gucci",
+      "Shipping": "Free",
+      "Variant": "Black, Size 10",
+      "ImageURL": "https://i.ibb.co/3SHkzy9/shoe14.png"
+    },
+    {
+      "Category": "Men",
+      "Name": "Dr. Martens 1460",
+      "Price": 149.99,
+      "AvailableQuantity": 8,
+      "Brand": "Dr. Martens",
+      "Shipping": 7.99,
+      "Variant": "Black Smooth, Size 10",
+      "ImageURL": "https://i.ibb.co/kc7FfSq/shoe15.png"
+    },
+    {
+      "Category": "Men",
+      "Name": "Allen Edmonds Park Avenue",
+      "Price": 399.99,
+      "AvailableQuantity": 10,
+      "Brand": "Allen Edmonds",
+      "Shipping": "Free",
+      "Variant": "Black, Size 11",
+      "ImageURL": "https://i.ibb.co/1JgHYNf/shoe16.png"
+    },
+    {
+      "Category": "Men",
+      "Name": "New Balance 574",
+      "Price": 84.99,
+      "AvailableQuantity": 22,
+      "Brand": "New Balance",
+      "Shipping": "Free",
+      "Variant": "White/Gray, Size 9",
+      "ImageURL": "https://i.ibb.co/KG1kCb4/shoe17.png"
+    },
+    {
+      "Category": "Men",
+      "Name": "Red Wing Heritage Iron Ranger",
+      "Price": 299.99,
+      "AvailableQuantity": 15,
+      "Brand": "Red Wing",
+      "Shipping": "Free",
+      "Variant": "Amber Harness, Size 10",
+      "ImageURL": "https://i.ibb.co/h2kTqPK/shoe18.png"
+    },
+    {
+      "Category": "Men",
+      "Name": "Nike Air Jordan 1",
+      "Price": 199.99,
+      "AvailableQuantity": 12,
+      "Brand": "Nike",
+      "Shipping": "Free",
+      "Variant": "Black/Red, Size 11",
+      "ImageURL": "https://i.ibb.co/jzSW17t/shoe19.png"
+    },
+    {
+      "Category": "Men",
+      "Name": "Clarks Desert Boot",
+      "Price": 129.99,
+      "AvailableQuantity": 10,
+      "Brand": "Clarks",
+      "Shipping": "Free",
+      "Variant": "Beeswax, Size 10",
+      "ImageURL": "https://i.ibb.co/Nj7kW3P/shoe20.png"
+    },
+    {
+      "Category": "Men",
+      "Name": "Cole Haan Grand Wingtip",
+      "Price": 179.99,
+      "AvailableQuantity": 10,
+      "Brand": "Cole Haan",
+      "Shipping": "Free",
+      "Variant": "British Tan, Size 9",
+      "ImageURL": "https://i.ibb.co/0yKV13p/shoe21.png"
+    },
+    {
+      "Category": "Men",
+      "Name": "Tod's Gommino Driving Shoes",
+      "Price": 429.99,
+      "AvailableQuantity": 10,
+      "Brand": "Tod's",
+      "Shipping": "Free",
+      "Variant": "Blue Suede, Size 10",
+      "ImageURL": "https://i.ibb.co/tDNCKR6/shoe22.png"
+    },
+    {
+      "Category": "Men",
+      "Name": "Puma Suede Classic",
+      "Price": 79.99,
+      "AvailableQuantity": 18,
+      "Brand": "Puma",
+      "Shipping": "Free",
+      "Variant": "Black/White, Size 9",
+      "ImageURL": "https://i.ibb.co/zR6VYhm/shoe23.png"
+    },
+    {
+      "Category": "Men",
+      "Name": "Caterpillar Second Shift Steel Toe",
+      "Price": 119.99,
+      "AvailableQuantity": 10,
+      "Brand": "Caterpillar",
+      "Shipping": "Free",
+      "Variant": "Honey, Size 10",
+      "ImageURL": "https://i.ibb.co/cc0SQ9z/shoe24.png"
+    },
+    {
+      "Category": "Men",
+      "Name": "Under Armour HOVR Sonic",
+      "Price": 109.99,
+      "AvailableQuantity": 15,
+      "Brand": "Under Armour",
+      "Shipping": "Free",
+      "Variant": "Gray/Green, Size 9",
+      "ImageURL": "https://i.ibb.co/FVXkxvr/shoe25.png"
+    },
+    {
+      "Category": "Men",
+      "Name": "Johnston & Murphy Melton Cap Toe",
+      "Price": 229.99,
+      "AvailableQuantity": 12,
+      "Brand": "Johnston & Murphy",
+      "Shipping": "Free",
+      "Variant": "Black, Size 11",
+      "ImageURL": "https://i.ibb.co/Wf217kY/shoe26.png"
+    },
+    {
+      "Category": "Men",
+      "Name": "Reebok Classic Leather",
+      "Price": 89.99,
+      "AvailableQuantity": 18,
+      "Brand": "Reebok",
+      "Shipping": "Free",
+      "Variant": "White/Gray, Size 9",
+      "ImageURL": "https://i.ibb.co/xCfnzh9/shoe27.png"
+    },
+    {
+      "Category": "Men",
+      "Name": "Gucci Horsebit Leather Loafer",
+      "Price": 599.99,
+      "AvailableQuantity": 10,
+      "Brand": "Gucci",
+      "Shipping": "Free",
+      "Variant": "Black, Size 10",
+      "ImageURL": "https://i.ibb.co/Rj4rM2h/shoe28.png"
+    }
+  ]
+  

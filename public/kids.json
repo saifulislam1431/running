@@ -1,0 +1,103 @@
+[
+
+  {
+    "Category": "Kids",
+    "img":"https://i.ibb.co/kxGyGn1/baby-shoes1.jpg",
+    "Name": "Cool Kicks",
+    "Price": 49.99,
+    "AvailableQuantity": 25,
+    "Brand": "Trendy Tots",
+    "Shipping": "Free",
+    "Variant": "Blue/Red, Size 10"
+  },
+  {
+    "Category": "Kids",
+    "img":"https://i.ibb.co/xH96R1c/baby-shoes2.jpg",
+    "Name": "Sunshine Sandals",
+    "Price": 29.99,
+    "AvailableQuantity": 15,
+    "Brand": "Happy Feet",
+    "Shipping": 4.99,
+    "Variant": "Pink, Size 8"
+  },
+  {
+    "Category": "Kids",
+    "img":"https://i.ibb.co/2Y7p1Bd/baby-shoes3.jpg",
+    "Name": "Adventure Seekers",
+    "Price": 39.99,
+    "AvailableQuantity": 20,
+    "Brand": "Wild Explorers",
+    "Shipping": "Free",
+    "Variant": "Brown, Size 12"
+  },
+  {
+    "Category": "Kids",
+    "img":"https://i.ibb.co/48cRPvy/baby-shoes4.jpg",
+    "Name": "Sporty Strides",
+    "Price": 34.99,
+    "AvailableQuantity": 30,
+    "Brand": "Active Kids",
+    "Shipping": 2.99,
+    "Variant": "Black/Green, Size 6"
+  },
+  {
+    "Category": "Kids",
+    "img":"https://i.ibb.co/MD55mqt/beautiful-pink-shoes5.jpg",
+    "Name": "Sparkle Princess",
+    "Price": 24.99,
+    "AvailableQuantity": 10,
+    "Brand": "Fancy Footwear",
+    "Shipping": "Free",
+    "Variant": "Silver, Size 4"
+  },
+  {
+    "Category": "Kids",
+    "img":"https://i.ibb.co/2tZvs5h/closeup-shot-baby-boy-shoes-bed.jpg",
+    "Name": "Easy Breezy",
+    "Price": 19.99,
+    "AvailableQuantity": 50,
+    "Brand": "Comfy Kids",
+    "Shipping": "Free",
+    "Variant": "Navy Blue, Size 9"
+  },
+  {
+    "Category": "Kids",
+    "img":"https://i.ibb.co/MG5yhk0/fashion-shoes.jpg",
+    "Name": "Smart Scholars",
+    "Price": 29.99,
+    "AvailableQuantity": 35,
+    "Brand": "Study Stars",
+    "Shipping": 3.99,
+    "Variant": "Black, Size 7"
+  },
+  {
+    "Category": "Kids",
+    "img":"https://i.ibb.co/QCLvYkW/fashion-shoes-sneakers.jpg",
+    "Name": "Dainty Dancers",
+    "Price": 27.99,
+    "AvailableQuantity": 18,
+    "Brand": "Twinkle Toes",
+    "Shipping": "Free",
+    "Variant": "Pink/White, Size 11"
+  },
+  {
+    "Category": "Kids",
+    "img":"https://i.ibb.co/H2xKvSs/front-view-cute-little-baby-girl-accesories-with-copy-space.jpg",
+    "Name": "Summer Vibes",
+    "Price": 14.99,
+    "AvailableQuantity": 40,
+    "Brand": "Sunny Steps",
+    "Shipping": "Free",
+    "Variant": "Orange/Yellow, Size 5"
+  },
+  {
+    "Category": "Kids",
+    "img":"https://i.ibb.co/gvmydw9/newborn-concept-with-hands-holding-shoes.jpg",
+    "Name": "Outdoor Explorers",
+    "Price": 44.99,
+    "AvailableQuantity": 12,
+    "Brand": "Adventurous Kids",
+    "Shipping": 4.99,
+    "Variant": "Gray/Blue, Size 13"
+  }
+]

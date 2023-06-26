@@ -28,7 +28,28 @@ export default {
           "error": "#f22e1c",
         },
       },
-      "night"
+      {
+        night: {
+          
+          "primary": "#808000",
+
+          "secondary": "#FFF44F",
+                   
+          "accent": "#f471b5",
+                   
+          "neutral": "#1d283a",
+                   
+          "base-100": "#0f1729",
+                   
+          "info": "#87CEEB",
+                   
+          "success": "#2bd4bd",
+                   
+          "warning": "#f4c152",
+                   
+          "error": "#fb6f84",
+                   },
+      }
     ],
   },
   plugins: [require("daisyui")],

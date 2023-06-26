@@ -17,7 +17,7 @@ const Hero = () => {
         </div>
         <div className='h-96 relative'>
             <img src={banner1} alt='Banner1' className='h-full'/>
-            <div className='absolute top-0 h-full w-full bg-black bg-opacity-50'>
+            <div className='absolute top-0 h-full w-full bg-black bg-opacity-50 px-10'>
 <div className='text-left'>
 <h1 className='mt-6 lg:mt-14 brand text-xl lg:text-3xl text-base-100'>Discover Your Sole Mate: Find the Perfect Pair for Every Occasion and Make a Fashion Statement!</h1>
 <button className='mySecBtn mt-10'>Explore Now <HiArrowSmallRight className='h-7 w-6'/></button>

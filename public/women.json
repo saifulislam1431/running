@@ -1,0 +1,202 @@
+[
+    {
+        "Category": "Women",
+        "Name": "Basic White Sneakers",
+        "Price": 59.99,
+        "AvailableQuantity": 30,
+        "Brand": "Classic Kicks",
+        "Shipping": "Free",
+        "Variant": "White, Size 8",
+        "ImageURL": "https://i.ibb.co/1GD62Jt/basic-white-sneakers-unisex-streetwear-fashion-shoot.jpg"
+    },
+    {
+        "Category": "Women",
+        "Name": "Canvas Sneakers (Green)",
+        "Price": 44.99,
+        "AvailableQuantity": 20,
+        "Brand": "Fresh Footwear",
+        "Shipping": "Free",
+        "Variant": "Green, Size 7",
+        "ImageURL": "https://i.ibb.co/3swLHSb/canvas-sneakers-green-model-tying-shoelaces-apparel-ad.jpg"
+    },
+    {
+        "Category": "Women",
+        "Name": "Runner Shoes (Red Laces)",
+        "Price": 69.99,
+        "AvailableQuantity": 15,
+        "Brand": "Swift Stride",
+        "Shipping": "Free",
+        "Variant": "Black/Red, Size 6",
+        "ImageURL": "https://i.ibb.co/txtTCpR/close-up-runner-shoes-with-red-laces.jpg"
+    },
+    {
+        "Category": "Women",
+        "Name": "Elegant Wedding Shoes",
+        "Price": 149.99,
+        "AvailableQuantity": 10,
+        "Brand": "Glamorous Soles",
+        "Shipping": 5.99,
+        "Variant": "Ivory, Size 9",
+        "ImageURL": "https://i.ibb.co/dkrKHKP/elegant-wedding-shoes.jpg"
+    },
+    {
+        "Category": "Women",
+        "Name": "Engagement Ring Bridal Heels",
+        "Price": 129.99,
+        "AvailableQuantity": 8,
+        "Brand": "Dazzling Steps",
+        "Shipping": "Free",
+        "Variant": "White, Size 7",
+        "ImageURL": "https://i.ibb.co/n6MJzR1/engagement-ring-with-gemstone-is-located-bridal-heels.jpg"
+    },
+    {
+        "Category": "Women",
+        "Name": "Autumn Pave Sneakers",
+        "Price": 54.99,
+        "AvailableQuantity": 25,
+        "Brand": "Fall Footwear",
+        "Shipping": 3.99,
+        "Variant": "Brown, Size 8",
+        "ImageURL": "https://i.ibb.co/0ZnBQ5g/hands-tying-trainers-shoelaces-autumn-pave.jpg"
+    },
+    {
+        "Category": "Women",
+        "Name": "Classic Black Heeled Shoes",
+        "Price": 79.99,
+        "AvailableQuantity": 12,
+        "Brand": "Timeless Elegance",
+        "Shipping": "Free",
+        "Variant": "Black, Size 7",
+        "ImageURL": "https://i.ibb.co/vd8Gw2t/heeled-shoes-close.jpg"
+    },
+    {
+        "Category": "Women",
+        "Name": "Red High Heels",
+        "Price": 89.99,
+        "AvailableQuantity": 7,
+        "Brand": "Bold Stilettos",
+        "Shipping": 5.99,
+        "Variant": "Red, Size 6",
+        "ImageURL": "https://i.ibb.co/mF6JjtC/high-heel-shoes.jpg"
+    },
+    {
+        "Category": "Women",
+        "Name": "Polka Dot Canvas Sneakers",
+        "Price": 49.99,
+        "AvailableQuantity": 18,
+        "Brand": "Playful Kicks",
+        "Shipping": "Free",
+        "Variant": "Black/White, Size 7",
+        "ImageURL": "https://i.ibb.co/5K9CVVB/pink-canvas-sneakers-with-polka-dot-unisex-footwear-fashion.jpg"
+    },
+    {
+        "Category": "Women",
+        "Name": "Casual Slip-On Sneakers",
+        "Price": 39.99,
+        "AvailableQuantity": 22,
+        "Brand": "Relaxed Fit",
+        "Shipping": "Free",
+        "Variant": "Gray, Size 8",
+        "ImageURL": "https://i.ibb.co/bLGVfgV/shoe29.png"
+    },
+    {
+        "Category": "Women",
+        "Name": "Elegant Black Stilettos",
+        "Price": 119.99,
+        "AvailableQuantity": 5,
+        "Brand": "Sophisticated Steps",
+        "Shipping": 7.99,
+        "Variant": "Black, Size 6",
+        "ImageURL": "https://i.ibb.co/vsh6pQj/shoe30.png"
+    },
+    {
+        "Category": "Women",
+        "Name": "Summer Beach Sandals",
+        "Price": 34.99,
+        "AvailableQuantity": 28,
+        "Brand": "Sunshine Steps",
+        "Shipping": "Free",
+        "Variant": "Pink, Size 7",
+        "ImageURL": "https://i.ibb.co/3vTK232/shoe32.png"
+    },
+    {
+        "Category": "Women",
+        "Name": "Leather Ankle Boots",
+        "Price": 89.99,
+        "AvailableQuantity": 10,
+        "Brand": "Classic Chic",
+        "Shipping": "Free",
+        "Variant": "Black, Size 8",
+        "ImageURL": "https://i.ibb.co/VLYJs5Z/shoe33.png"
+    },
+    {
+        "Category": "Women",
+        "Name": "Winter Snow Boots",
+        "Price": 79.99,
+        "AvailableQuantity": 15,
+        "Brand": "Snowflake Footwear",
+        "Shipping": 4.99,
+        "Variant": "Gray, Size 9",
+        "ImageURL": "https://i.ibb.co/7RFQC5t/shoe34.png"
+    },
+    {
+        "Category": "Women",
+        "Name": "Hiking Boots",
+        "Price": 99.99,
+        "AvailableQuantity": 8,
+        "Brand": "Adventure Gear",
+        "Shipping": "Free",
+        "Variant": "Brown, Size 7",
+        "ImageURL": "https://i.ibb.co/rZxTdQ2/shoe35.png"
+    },
+    {
+        "Category": "Women",
+        "Name": "Running Shoes",
+        "Price": 69.99,
+        "AvailableQuantity": 20,
+        "Brand": "Active Fit",
+        "Shipping": "Free",
+        "Variant": "Blue, Size 8",
+        "ImageURL": "https://i.ibb.co/wMB8Pt5/sport-running-shoes.jpg"
+    },
+    {
+        "Category": "Women",
+        "Name": "Sporty Woman Shoes",
+        "Price": 54.99,
+        "AvailableQuantity": 15,
+        "Brand": "Athletic Performance",
+        "Shipping": "Free",
+        "Variant": "Gray/Pink, Size 7",
+        "ImageURL": "https://i.ibb.co/m0nP70r/sporty-woman-sexy-legs.jpg"
+    },
+    {
+        "Category": "Women",
+        "Name": "White Sneakers",
+        "Price": 49.99,
+        "AvailableQuantity": 25,
+        "Brand": "Fresh Steps",
+        "Shipping": "Free",
+        "Variant": "White, Size 6",
+        "ImageURL": "https://i.ibb.co/tzPScnC/top-view-sneakers-white-background-fitness-wear-equipment-sport-fashion-sport-accessories-sport-equi.jpg"
+    },
+    {
+        "Category": "Women",
+        "Name": "Black Pumps",
+        "Price": 69.99,
+        "AvailableQuantity": 12,
+        "Brand": "Classic Elegance",
+        "Shipping": "Free",
+        "Variant": "Black, Size 7",
+        "ImageURL": "https://i.ibb.co/PGKzJHQ/woman-shoes.jpg"
+    },
+    {
+        "Category": "Women",
+        "Name": "White High Heel Shoes",
+        "Price": 79.99,
+        "AvailableQuantity": 8,
+        "Brand": "Modern Chic",
+        "Shipping": 5.99,
+        "Variant": "White, Size 8",
+        "ImageURL": "https://i.ibb.co/jhdvvnv/women-rsquo-s-white-high-heel-shoes-fashion.jpg"
+    }
+]
