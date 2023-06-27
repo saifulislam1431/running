@@ -5,7 +5,7 @@ import SingleProduct from './SingleProduct';
 
 const AllProduct = () => {
     const [shoes] = useShoes();
-    console.log(shoes);
+
     return (
         <div className='my-10 flex items-center justify-center'>
 

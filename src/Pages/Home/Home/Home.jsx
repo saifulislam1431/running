@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../Hero/Hero';
 import OurShop from '../OurShop/OurShop';
 import TopBrand from '../TopBrand/TopBrand';
+import OurServices from '../OurServices/OurServices';
 
 // https://i.ibb.co/7zScxLT/banner2.png 
 // https://i.ibb.co/PWmFRf3/banner4.png
@@ -12,6 +13,7 @@ const Home = () => {
 <Hero />
 <OurShop />
 <TopBrand />
+<OurServices />
         </section>
     );
 };
