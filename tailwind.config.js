@@ -21,7 +21,7 @@ export default {
 
           "info": "#333333",
 
-          "success": "#7fe6d0",
+          "success": "#17975b",
 
           "warning": "#f3c672",
 
@@ -43,7 +43,7 @@ export default {
                    
           "info": "#87CEEB",
                    
-          "success": "#2bd4bd",
+          "success": "#17975b",
                    
           "warning": "#f4c152",
                    
