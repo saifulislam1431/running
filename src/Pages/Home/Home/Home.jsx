@@ -5,6 +5,7 @@ import TopBrand from '../TopBrand/TopBrand';
 import OurServices from '../OurServices/OurServices';
 import HowItWorks from '../HowItWorks/HowItWorks';
 import Testimonial from '../Testimonial/Testimonial';
+import Contact from '../Contact/Contact';
 
 // https://i.ibb.co/7zScxLT/banner2.png 
 // https://i.ibb.co/PWmFRf3/banner4.png
@@ -18,6 +19,7 @@ const Home = () => {
 <OurServices />
 <HowItWorks />
 <Testimonial />
+<Contact />
         </section>
     );
 };

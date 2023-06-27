@@ -15,7 +15,7 @@ const HowItWorks = () => {
   <li data-content="+" className="step step-primary font-semibold">Select</li>
   <li data-content="$" className="step step-success font-semibold">Purchase</li>
   <li data-content="✓" className="step step-success font-semibold">Confirm Order</li>
-  <li data-content="★" className="step step-success font-semibold">Receive Product</li>
+  <li data-content="★" className="step step-success font-semibold">Receive</li>
 </ul>
     </div>          
         </section>
