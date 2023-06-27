@@ -12,14 +12,19 @@ import "./Top.css"
 import { HiOutlineShoppingCart } from 'react-icons/hi2';
 
 const TopBrand = () => {
-    const [brandName , setBrandName] = useState("Adidas");
-    const [brand , setBrand] = useState([])
-    const [brands] =useBrands();
+    const [brands , refetch] =useBrands();
 
-useEffect(()=>{
+    const [brandName , setBrandName] = useState("Adidas");
+
+
+    const [brand , setBrand] = useState([])
+    
+
+useEffect(()=>{  
     const selectedBrand = brands.filter(singleBrand => singleBrand.Brand === brandName)
     setBrand(selectedBrand)
-},[brandName])
+    refetch()
+},[brandName , brands])
 
 
     return (
@@ -31,14 +36,6 @@ useEffect(()=>{
 <button className={`tabs brand ${brandName === "Puma" ? "activeTab" : ""}`} onClick={()=>setBrandName("Puma")}>Puma</button>    
 </div> 
 
-{/* <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-10'>
-{
-    brand.map(singleBrand=><Brands
-    key={singleBrand._id}
-    singleBrand={singleBrand}
-    ></Brands>)
-}
-</div> */}
 
 <div>
 <Swiper
