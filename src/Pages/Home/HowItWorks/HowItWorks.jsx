@@ -3,7 +3,7 @@ import SectionTitle from '../../../Components/SectionTitle';
 
 const HowItWorks = () => {
     return (
-        <section className='my-14 flex items-center justify-center'>
+        <section className='my-14 flex items-center justify-center overflow-hidden'>
   <div className='text-center'>
     <SectionTitle
     title="Step-by-Step Guide"
@@ -11,7 +11,8 @@ const HowItWorks = () => {
     ></SectionTitle>
 
 
-<ul className="steps steps-vertical lg:steps-horizontal">
+<ul className="steps steps-vertical lg:steps-horizontal" data-aos="zoom-out-up"
+        data-aos-duration="1000">
   <li data-content="+" className="step step-primary font-semibold">Select</li>
   <li data-content="$" className="step step-success font-semibold">Purchase</li>
   <li data-content="✓" className="step step-success font-semibold">Confirm Order</li>

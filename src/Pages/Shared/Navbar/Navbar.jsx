@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { HiMagnifyingGlass, HiOutlineArrowRightOnRectangle } from "react-icons/hi2";
+import { HiMagnifyingGlass, HiOutlineArrowLeftOnRectangle, HiOutlineArrowRightOnRectangle } from "react-icons/hi2";
 import logo from "../../../assets/logo/running.png";
 const Navbar = () => {
   const user = false;
@@ -53,8 +53,10 @@ subNav ? <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shad
   <button className='myBtn my-3'>Logout <HiOutlineArrowRightOnRectangle className='h-5 w-5'/></button>
 </ul> : ""
 }
-</div> : ""
+</div> : <Link to="/signIn" className='myBtn'>Sign In <HiOutlineArrowLeftOnRectangle className='h-5 w-5'/></Link>
 }
+
+
 
     <label className="swap swap-rotate ml-2 shadow-md lg:px-4 py-2 lg:py-0 rounded-lg">
   
@@ -87,7 +89,7 @@ subNav ? <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shad
         <p className='relative brand -top-1'>Running...</p>
     </Link>
     <div className='relative'>
-    <input type="text" placeholder='Search your dream product' className='inputField h-min'/>
+    <input type="text" placeholder='Search your dream product' className='inputField h-min lg:w-72'/>
     <div className='absolute top-0 right-0 bg-primary px-4 py-2 rounded-r-md'>
     <HiMagnifyingGlass className='h-6 w-6 text-white'/>
     </div>

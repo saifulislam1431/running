@@ -8,7 +8,7 @@ import service5 from "../../../assets/icons/webpage.png";
 
 const OurServices = () => {
     return (
-        <section className='flex items-center justify-center my-14'>
+        <section className='flex items-center justify-center my-14 overflow-hidden'>
 <div>
     <SectionTitle
     title="Stand Out from the Crowd with our best services"
@@ -17,26 +17,31 @@ const OurServices = () => {
     </SectionTitle>
 
     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-14 px-5'>
-<div className='p-5 border border-primary rounded-md text-center'>
+<div className='p-5 border border-primary rounded-md text-center' data-aos="fade-right"
+        data-aos-duration="1500">
 <img src={service1} alt="Service 1" className='mx-auto mb-3 w-11'/>
     <h1 className='secTitle text-primary text-lg'>Fast and Secure Checkout</h1>
 </div>
 
-<div className='p-5 border border-primary rounded-md text-center'>
+<div className='p-5 border border-primary rounded-md text-center' data-aos="fade-up"
+        data-aos-duration="1500">
 <img src={service2} alt="Service 1" className='mx-auto mb-3 w-11'/>
     <h1 className='secTitle text-primary text-lg'>Wide Range of Selection</h1>
 </div>
 
-<div className='p-5 border border-primary rounded-md text-center'>
+<div className='p-5 border border-primary rounded-md text-center' data-aos="fade-left"
+        data-aos-duration="1500">
 <img src={service3} alt="Service 1" className='mx-auto mb-3 w-11'/>
     <h1 className='secTitle text-primary text-lg'>Responsive and User-Friendly Design</h1>
 </div>
 
-<div className='p-5 border border-primary rounded-md text-center'>
+<div className='p-5 border border-primary rounded-md text-center' data-aos="fade-right"
+        data-aos-duration="1500">
 <img src={service4} alt="Service 1" className='mx-auto mb-3 w-11'/>
     <h1 className='secTitle text-primary text-lg'>Exceptional Customer Service</h1>
 </div>
-<div className='p-5 border border-primary rounded-md text-center'>
+<div className='p-5 border border-primary rounded-md text-center' data-aos="fade-left"
+        data-aos-duration="1500">
 <img src={service5} alt="Service 1" className='mx-auto mb-3 w-11'/>
     <h1 className='secTitle text-primary text-lg'>Personalized Recommendations</h1>
 </div>

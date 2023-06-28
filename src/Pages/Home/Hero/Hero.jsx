@@ -4,6 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 import banner1 from "../../../assets/shoe/banner/banner1.png"
 import banner3 from "../../../assets/shoe/banner/banner3.png"
 import { HiArrowSmallRight } from 'react-icons/hi2';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -12,7 +13,7 @@ const Hero = () => {
             <img src={banner3} alt='Banner1' className='h-full'/>
             <div className='absolute top-0 h-full w-full bg-black bg-opacity-20 items-center'>
 <h1 className='mt-6 lg:mt-14 brand text-xl lg:text-3xl text-primary'>Celebrate Every Step: Unleash Your Style with our Iconic Shoe Collection!</h1>
-<button className='myBtn mt-10'>Shop Now <HiArrowSmallRight className='h-7 w-6'/></button>
+<Link to="/shop" className='myBtn mt-10'>Shop Now <HiArrowSmallRight className='h-7 w-6'/></Link>
             </div>
         </div>
         <div className='h-96 relative'>

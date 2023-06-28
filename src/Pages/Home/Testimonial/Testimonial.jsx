@@ -14,6 +14,7 @@ import { Rating } from '@smastrom/react-rating';
 import '@smastrom/react-rating/style.css'
 import { FaQuoteLeft } from "react-icons/fa";
 import { HiOutlinePencil } from 'react-icons/hi2';
+import { Link } from 'react-router-dom';
 
 const Testimonial = () => {
     const [reviews] = useReviews();
@@ -59,8 +60,8 @@ description="Discover the trust and satisfaction our customers have in our brand
       </Swiper>
 
 <div className='text-center my-5'>
-<button className='myBtn'>
-   <HiOutlinePencil className='h-5 w-5'/> Add Your Testimonial</button>
+<Link to="/feedback" className='myBtn'>
+   <HiOutlinePencil className='h-5 w-5'/> Add Your Testimonial</Link>
 </div>
 </div>
         </section>

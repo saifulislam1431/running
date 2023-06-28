@@ -30,7 +30,7 @@ body{
 }
 
 .inputField{
-    @apply px-3 lg:w-72 py-2 rounded-md placeholder:text-sm placeholder:font-semibold bg-primary bg-opacity-10 placeholder:text-info  focus:outline-primary
+    @apply px-3 py-2 rounded-md placeholder:text-sm placeholder:font-semibold bg-primary bg-opacity-10 placeholder:text-info  focus:outline-primary
 }
 .tabs{
     @apply bg-transparent text-lg

@@ -4,9 +4,11 @@ import { HiOutlineShoppingCart } from 'react-icons/hi2';
 const SingleProduct = ({shoe}) => {
     const {_id,Category,Name,Price,AvailableQuantity,Brand,Shipping,Variant,ImageURL} = shoe ;
     return (
-        <div className='my-5 shadow-md rounded-lg'>
+        <div className='my-5 shadow-md rounded-lg overflow-hidden'>
             <motion.div className='relative'
     whileHover={{ scale: 1.1 }}
+    data-aos="fade-left"
+        data-aos-duration="1500"
 >
     <img src={ImageURL} alt="Shoe" className='w-80 h-72 rounded-lg'/>
 

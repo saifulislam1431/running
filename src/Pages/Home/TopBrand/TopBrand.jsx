@@ -37,7 +37,8 @@ useEffect(()=>{
 </div> 
 
 
-<div>
+<div data-aos="fade-right"
+        data-aos-duration="1500">
 <Swiper
         effect={"coverflow"}
         grabCursor={true}
