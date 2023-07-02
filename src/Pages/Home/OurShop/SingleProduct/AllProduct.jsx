@@ -13,7 +13,7 @@ const AllProduct = () => {
             <div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
 {
-    shoes.slice(16 , 22).map(shoe=><SingleProduct
+    shoes.slice(0,6).map(shoe=><SingleProduct
     key={shoe._id}
     shoe={shoe}
     ></SingleProduct>)

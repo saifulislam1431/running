@@ -1,14 +1,17 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useForm } from "react-hook-form";
 import logo from "../../assets/logo/running.png"
 import { Link } from 'react-router-dom';
 import Lottie from "lottie-react";
 import animation from "../../../public/106680-login-and-sign-up.json";
-import google from "../../assets/icons/google.png";
-import facebook from "../../assets/icons/facebook.png";
 import { HiEye, HiEyeSlash } from 'react-icons/hi2';
+import SocialLogIn from '../../Components/SocialLogIn';
+import Swal from 'sweetalert2';
+import { UserAuth } from '../../Auth/Auth';
 
 const SignIn = () => {
+    const {logIn} = useContext(UserAuth);
+
 const [show , setShow] = useState(false);
 const [type , setType] = useState("password")
 
@@ -22,7 +25,27 @@ const handleHide = ()=>{
 
 
     const { register, formState: { errors }, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const onSubmit = data => {
+
+        logIn(data?.email , data?.password)
+        .then(res=>{
+            const loggedUser = res.user;
+            Swal.fire({
+                title: 'Success!',
+                text: 'Sign In Successful ',
+                icon: 'success',
+                confirmButtonText: 'Ok'
+              })
+        })
+        .catch(error=>{
+            Swal.fire({
+                title: 'Error!',
+                text: error.massage ,
+                icon: 'error',
+                confirmButtonText: 'Ok'
+              })
+        })
+    };
 
     return (
         <section className='flex items-center justify-center min-h-[calc(80vh-100px)]'>
@@ -70,14 +93,7 @@ const handleHide = ()=>{
 
 <div className="divider font-semibold">OR WITH</div>
 
-<div className='text-center space-x-4 mt-5'>
-<button>
-    <img src={google} alt="Google" />
-</button>
-<button>
-    <img src={facebook} alt="Google" />
-</button>
-</div>
+<SocialLogIn ></SocialLogIn>
     </div>
 </div>
 </div>

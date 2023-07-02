@@ -3,10 +3,32 @@ import { Link, NavLink } from 'react-router-dom';
 import { HiMagnifyingGlass, HiOutlineArrowLeftOnRectangle, HiOutlineArrowRightOnRectangle } from "react-icons/hi2";
 import logo from "../../../assets/logo/running.png";
 import { UserAuth } from '../../../Auth/Auth';
+import Swal from 'sweetalert2';
 const Navbar = () => {
-  const {user , logOut} = useContext(UserAuth);
+  const { user, logOut } = useContext(UserAuth);
   const [subNav, setSubNav] = useState(false)
   const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
+
+  const handleOut = () => {
+    logOut()
+      .then(() => {
+        Swal.fire({
+          title: 'Success!',
+          text: 'Sign Out Successful ',
+          icon: 'success',
+          confirmButtonText: 'Ok'
+        })
+      })
+
+      .catch(error => {
+        Swal.fire({
+          title: 'Error!',
+          text: error.massage,
+          icon: 'error',
+          confirmButtonText: 'Ok'
+        })
+      })
+  }
 
   const handleTheme = (e) => {
     if (e.target.checked) {
@@ -44,14 +66,14 @@ const Navbar = () => {
       user ? <div className="dropdown dropdown-end ml-3" onClick={() => setSubNav(!subNav)}>
         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
           <div className="w-10 rounded-full">
-            <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+            <img src={user?.photoURL} alt='Profile'/>
           </div>
         </label>
         {
           subNav ? <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
             <li><NavLink to="/profile" className={({ isActive }) => (isActive ? "active" : "default")}>Profile</NavLink></li>
 
-            <button className='myBtn my-3'>Logout <HiOutlineArrowRightOnRectangle className='h-5 w-5' /></button>
+            <button className='myBtn my-3' onClick={handleOut}>Logout <HiOutlineArrowRightOnRectangle className='h-5 w-5' /></button>
           </ul> : ""
         }
       </div> : <Link to="/signIn" className='myBtn'>Sign In <HiOutlineArrowLeftOnRectangle className='h-5 w-5' /></Link>
