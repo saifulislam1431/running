@@ -25,7 +25,7 @@ export default {
 
           "warning": "#f3c672",
 
-          "error": "#f22e1c",
+          "error": "#fb6f84",
         },
       },
       {

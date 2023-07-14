@@ -38,3 +38,10 @@ body{
 .activeTab{
     @apply border-b-2 border-primary text-primary
 }
+
+.side-active{
+    @apply bg-base-100 text-base font-bold text-primary rounded-r-none hover:bg-transparent my-3 focus:bg-base-100 focus:text-primary 
+}
+.side-default{
+    @apply bg-transparent text-base font-semibold text-info hover:bg-transparent hover:text-primary border border-base-100 my-3 rounded-r-none 
+}

@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { useForm } from "react-hook-form";
 import logo from "../../assets/logo/running.png"
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Lottie from "lottie-react";
 import animation from "../../../public/93385-login.json";
 import { HiEye, HiEyeSlash } from 'react-icons/hi2';
@@ -14,7 +14,10 @@ const SignUp = () => {
     const { logUp , updateUser } = useContext(UserAuth);
     const [show, setShow] = useState(false);
     const [type, setType] = useState("password")
-    const [getError, setGetError] = useState("")
+    const [getError, setGetError] = useState("");
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
 
     const handleShow = () => {
         setType("text")
@@ -56,7 +59,8 @@ const SignUp = () => {
               })
               updateUser(loggedUser , data?.name , data?.photo)
               .then(()=>{console.log("Update")})
-              setGetError("")
+              setGetError("");
+              navigate(from, {replace:true})
               console.log(newUser);
         })
         .catch((error)=>{

@@ -14,13 +14,13 @@ const SocialLogIn = () => {
         googleLog()
         .then(res=>{
             const loggedUser = res.user;
-            navigate(from , {replace:true})
             Swal.fire({
                 title: 'Success!',
                 text: 'Sign In Successful ',
                 icon: 'success',
                 confirmButtonText: 'Ok'
               })
+              navigate(from , {replace:true})
         })
         .catch(error=>{
             Swal.fire({

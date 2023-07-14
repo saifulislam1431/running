@@ -4,8 +4,10 @@ import { HiMagnifyingGlass, HiOutlineArrowLeftOnRectangle, HiOutlineArrowRightOn
 import logo from "../../../assets/logo/running.png";
 import { UserAuth } from '../../../Auth/Auth';
 import Swal from 'sweetalert2';
+import useCart from '../../../Hooks/useCart';
 const Navbar = () => {
   const { user, logOut } = useContext(UserAuth);
+  const [carts] = useCart();
   const [subNav, setSubNav] = useState(false)
   const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
 
@@ -54,9 +56,9 @@ const Navbar = () => {
       user ? <li><NavLink to="/dashboard" className={({ isActive }) => (isActive ? "active" : "default")}>Dashboard</NavLink></li> : ""
     }
 
-    {
+    {/* {
       user ? <li><NavLink to="/cart" className={({ isActive }) => (isActive ? "active" : "default")}>Cart</NavLink></li> : ""
-    }
+    } */}
 
     <li><NavLink to="/about" className={({ isActive }) => (isActive ? "active" : "default")}>About</NavLink></li>
 
@@ -64,13 +66,21 @@ const Navbar = () => {
 
     {
       user ? <div className="dropdown dropdown-end ml-3" onClick={() => setSubNav(!subNav)}>
-        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+        <label tabIndex={0} className="btn btn-ghost btn-circle avatar relative">
           <div className="w-10 rounded-full">
-            <img src={user?.photoURL} alt='Profile'/>
+            <img src={user?.photoURL} alt='Profile' />
           </div>
+          <div className='absolute left-0 top-0 bg-error text-base-100 px-1 font-bold rounded-full'>
+              {
+                carts.length
+              }
+            </div>
         </label>
         {
           subNav ? <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+
+            <li><NavLink to="/cart" className={({ isActive }) => (isActive ? "active" : "default")}>Cart</NavLink></li>
+
             <li><NavLink to="/profile" className={({ isActive }) => (isActive ? "active" : "default")}>Profile</NavLink></li>
 
             <button className='myBtn my-3' onClick={handleOut}>Logout <HiOutlineArrowRightOnRectangle className='h-5 w-5' /></button>
