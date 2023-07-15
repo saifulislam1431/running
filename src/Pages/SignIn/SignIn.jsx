@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { useForm } from "react-hook-form";
 import logo from "../../assets/logo/running.png"
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Lottie from "lottie-react";
 import animation from "../../../public/106680-login-and-sign-up.json";
 import { HiEye, HiEyeSlash } from 'react-icons/hi2';
@@ -14,6 +14,10 @@ const SignIn = () => {
 
 const [show , setShow] = useState(false);
 const [type , setType] = useState("password")
+
+const navigate = useNavigate();
+const location = useLocation();
+const from = location.state?.from?.pathname || "/"
 
 const handleShow = ()=>{
 setType("text")
@@ -30,6 +34,7 @@ const handleHide = ()=>{
         logIn(data?.email , data?.password)
         .then(res=>{
             const loggedUser = res.user;
+            navigate(from,{replace:true})
             Swal.fire({
                 title: 'Success!',
                 text: 'Sign In Successful ',

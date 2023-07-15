@@ -5,6 +5,8 @@ import { Link, NavLink, Outlet } from 'react-router-dom';
 import logo from "../../assets/logo/running.png"
 
 const Dashboard = () => {
+  const isAdmin = true;
+
     return (
         <section>
             <div className="drawer lg:drawer-open">
@@ -31,13 +33,26 @@ const Dashboard = () => {
 
 
       {/* Sidebar content here */}
-      <li><NavLink to="/dashboard/userCart" className={({isActive})=>(isActive ? "side-active" : "side-default")}>My Cart</NavLink></li>
+      {
+        isAdmin ? <>
+        <li><NavLink to="/dashboard/manageUser" className={({isActive})=>(isActive ? "side-active" : "side-default")}>Manage Users</NavLink></li>
 
-      <li><NavLink to="/dashboard/orderStatus" className={({isActive})=>(isActive ? "side-active" : "side-default")}>Order Status</NavLink></li>
+<li><NavLink to="/dashboard/manageOrder" className={({isActive})=>(isActive ? "side-active" : "side-default")}>Manage Orders</NavLink></li>
 
-      <li><NavLink to="/dashboard/payment" className={({isActive})=>(isActive ? "side-active" : "side-default")}>Payment</NavLink></li>
+<li><NavLink to="/dashboard/manageProduct" className={({isActive})=>(isActive ? "side-active" : "side-default")}>Manage Products</NavLink></li>
 
-      <li><NavLink to="/dashboard/paymentHistory" className={({isActive})=>(isActive ? "side-active" : "side-default")}>Payment History</NavLink></li>
+<li><NavLink to="/dashboard/addProduct" className={({isActive})=>(isActive ? "side-active" : "side-default")}>Add Product</NavLink></li>
+        </> : 
+        <>
+        <li><NavLink to="/dashboard/userCart" className={({isActive})=>(isActive ? "side-active" : "side-default")}>My Cart</NavLink></li>
+
+<li><NavLink to="/dashboard/orderStatus" className={({isActive})=>(isActive ? "side-active" : "side-default")}>Order Status</NavLink></li>
+
+<li><NavLink to="/dashboard/payment" className={({isActive})=>(isActive ? "side-active" : "side-default")}>Payment</NavLink></li>
+
+<li><NavLink to="/dashboard/paymentHistory" className={({isActive})=>(isActive ? "side-active" : "side-default")}>Payment History</NavLink></li>
+        </>
+      }
       
 
 <div className='divider px-2 my-3'></div>

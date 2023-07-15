@@ -8,6 +8,7 @@ import { HiEye, HiEyeSlash } from 'react-icons/hi2';
 import { UserAuth } from '../../Auth/Auth';
 import SocialLogIn from '../../Components/SocialLogIn';
 import Swal from 'sweetalert2';
+import axios from 'axios';
 
 
 const SignUp = () => {
@@ -51,14 +52,21 @@ const SignUp = () => {
         logUp(email , password)
         .then(res=>{
             const loggedUser = res.user;
-            Swal.fire({
-                title: 'Success!',
-                text: 'Sign Up Successful ',
-                icon: 'success',
-                confirmButtonText: 'Ok'
-              })
+            navigate(from , {replace: true})
               updateUser(loggedUser , data?.name , data?.photo)
-              .then(()=>{console.log("Update")})
+              .then(async()=>{
+                const userData = {name: name , email: email, photo: photo}
+                const response = await axios.post("http://localhost:5000/all-users" , userData)
+    
+                if(response.data.insertedId){
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Sign Up Successful ',
+                        icon: 'success',
+                        confirmButtonText: 'Ok'
+                      })
+                }
+              })
               setGetError("");
               navigate(from, {replace:true})
               console.log(newUser);

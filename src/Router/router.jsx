@@ -12,6 +12,10 @@ import MyCart from '../Pages/UserDashboard/MyCart/MyCart';
 import OrderStatus from '../Pages/UserDashboard/OrderStatus/OrderStatus';
 import Payment from '../Pages/UserDashboard/Payment/Payment';
 import History from '../Pages/UserDashboard/History/History';
+import ManageUser from '../Pages/AdminDashboard/ManageUser/ManageUser';
+import ManageOrders from '../Pages/AdminDashboard/ManageOrders/ManageOrders';
+import ManageProducts from '../Pages/AdminDashboard/ManageProducts/ManageProducts';
+import AddProducts from '../Pages/AdminDashboard/AddProducts/AddProducts';
 
 const router = createBrowserRouter([
     {
@@ -56,7 +60,23 @@ const router = createBrowserRouter([
             {
                 path:"/dashboard/paymentHistory",
                 element:<PrivateRouter><History></History></PrivateRouter>
-            }
+            },
+            {
+                path:"/dashboard/manageUser",
+                element: <ManageUser></ManageUser>
+            },
+            {
+                path:"/dashboard/manageOrder",
+                element: <ManageOrders></ManageOrders>
+            },
+            {
+                path:"/dashboard/manageProduct",
+                element: <ManageProducts></ManageProducts>
+            },
+            {
+                path:"/dashboard/addProduct",
+                element: <AddProducts></AddProducts>
+            },
         ]
     }
 ])

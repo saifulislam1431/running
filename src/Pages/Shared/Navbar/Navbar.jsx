@@ -10,6 +10,7 @@ const Navbar = () => {
   const [carts] = useCart();
   const [subNav, setSubNav] = useState(false)
   const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
+  const isAdmin = true;
 
   const handleOut = () => {
     logOut()
@@ -53,7 +54,7 @@ const Navbar = () => {
     <li><NavLink to="/shop" className={({ isActive }) => (isActive ? "active" : "default")}>Shop</NavLink></li>
 
     {
-      user ? <li><NavLink to="/dashboard" className={({ isActive }) => (isActive ? "active" : "default")}>Dashboard</NavLink></li> : ""
+      user ? <li><NavLink to={`${isAdmin ? "/dashboard/manageUser" : "/dashboard/userCart"}`} className={({ isActive }) => (isActive ? "active" : "default")}>Dashboard</NavLink></li> : ""
     }
 
     {/* {

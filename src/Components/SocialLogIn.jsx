@@ -4,6 +4,7 @@ import facebook from "../assets/icons/facebook.png";
 import { UserAuth } from '../Auth/Auth';
 import Swal from 'sweetalert2';
 import { useLocation, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 const SocialLogIn = () => {
     const {facebookLog,googleLog} = useContext(UserAuth);
     const location = useLocation();
@@ -12,15 +13,21 @@ const SocialLogIn = () => {
 
     const handleGoogleLog=()=>{
         googleLog()
-        .then(res=>{
+        .then(async(res)=>{
             const loggedUser = res.user;
-            Swal.fire({
-                title: 'Success!',
-                text: 'Sign In Successful ',
-                icon: 'success',
-                confirmButtonText: 'Ok'
-              })
-              navigate(from , {replace:true})
+            const userData = {name: loggedUser.displayName , email: loggedUser.email, photo:loggedUser.photoURL}
+            const response = await axios.post("http://localhost:5000/all-users" , userData)
+
+            if(response.data){
+                navigate(from , {replace: true})
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Sign In Successful ',
+                    icon: 'success',
+                    confirmButtonText: 'Ok'
+                  })
+            }
+           
         })
         .catch(error=>{
             Swal.fire({
@@ -33,15 +40,20 @@ const SocialLogIn = () => {
     }
     const handleFacebookLog=()=>{
         facebookLog()
-        .then(res=>{
+        .then(async(res)=>{
             const loggedUser = res.user;
-            navigate(from , {replace:true})
-            Swal.fire({
-                title: 'Success!',
-                text: 'Sign In Successful ',
-                icon: 'success',
-                confirmButtonText: 'Ok'
-              })
+            const userData = {name: loggedUser.displayName , email: loggedUser.email, photo:loggedUser.photoURL}
+            const response = await axios.post("http://localhost:5000/all-users" , userData)
+
+            if(response.data){
+                navigate(from , {replace: true})
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Sign In Successful ',
+                    icon: 'success',
+                    confirmButtonText: 'Ok'
+                  })
+            }
         })
         .catch(error=>{
             Swal.fire({
